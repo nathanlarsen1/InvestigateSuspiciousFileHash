@@ -2,7 +2,7 @@
 
 
 <h2>Project description</h2>
-For this project, I acted as a Cybersecurity Analyst on a security team for an organization. One of my job roles involved investigating a file that was attached to an email that a user received in their inbox. Shortly after the reception of the email, an alert was sent to the SOC (System Operations Center) by the intrusion detection system stating that multiple unauthorized excecutable files were detected on the employee's computer. <br/><br/>
+For this project, I acted as a Cybersecurity Analyst on a security team for an organization. One of my job roles involved investigating suspicious files. There was a file discovered that was attached to an email that an employee received in their inbox. Shortly after the reception of the email, an alert was sent to the SOC(System Operations Center) by the IDS(Intrusion Detection System) stating that multiple unauthorized excecutable files were detected on the employee's computer. <br/><br/>
 
 Here is a timeline of the events leading up to this alert:
 
@@ -26,7 +26,7 @@ SHA256 file hash: 54e6ea47eb04634d3e87fd7787e2136ccfbcc80ade34f246a12cf93bab527f
 </p>
 
 <h2>Used VirusTotal Website to Investigate File Hash</h2>
-Then I right-clicked on the "Command Prompt" result and selected "Run as administrator."</br></br>
+Pasted the hash value in the search box of the VirusTotal website."</br></br>
                                                 
 <p align="center">
 <img src="https://i.imgur.com/Fc97h0B.png" height="80%" width="80%" alt="Open the file that contains the allow list"/>
@@ -34,8 +34,8 @@ Then I right-clicked on the "Command Prompt" result and selected "Run as adminis
 <br />
 </p>
 
-<h2>Command Prompt</h2>
-The Command Prompt opened.</br></br>
+<h2>VirusTotal Website Results</h2>
+The following image is the results I retrieved from the VirusTotal website from the hash. By these results, it was found that 61/73 security vendors flagged this file as malicious. The popular threat label is "trojan.flagpro/fragtor" which means it is a trojan from the fragtor/flagpro family.</br></br>
                                                 
 <p align="center">
 <img src="https://i.imgur.com/E4OBbTc.png" height="80%" width="80%" alt="Open the file that contains the allow list"/>
@@ -45,4 +45,4 @@ The Command Prompt opened.</br></br>
 
 <h2>Summary</h2>
 
-In this excerise, I demonstrated the use of diskpart to wipe a drive as a Cybersecurity Analyst. This example displayed how drives can easily be wiped for reuse.
+In this excerise, I demonstrated the use of hashing and investigating suspicious files as a Cybersecurity Analyst. This example displayed how effective crowdsourcing is by the VirusTotal results.
