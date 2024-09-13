@@ -24,7 +24,7 @@ The following is a timeline of the events leading up to this alert:
 
 <h2>Environments Used </h2>
 
-- <b>Ubuntu 22.04.4 LTS</b></br></br>
+- <b>Linux</b></br></br>
 
 <h2>Creating SHA256 Hash of File</h2>
 Transferred a copy of the file securely to an isolated Linux virtual machine. Ran the sha256sum command on the file. Noted the SHA256 file hash.<br/><br/>
