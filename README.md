@@ -1,26 +1,35 @@
-<h1>Wiping a drive using the Diskpart utility in the Windows Command Prompt</h1>
+<h1>Investigate Suspicious File Hash using VirusTotal Website</h1>
 
 
 <h2>Project description</h2>
-For this project, I acted as a Cybersecurity Analyst on a security team for an organization. One of my job roles involved wiping a USB drive. I chose to use the diskpart command in Windows.<br/><br/>
+For this project, I acted as a Cybersecurity Analyst on a security team for an organization. One of my job roles involved investigating a file that was attached to an email that a user received in their inbox. Shortly after the reception of the email, an alert was sent to the SOC (System Operations Center) by the intrusion detection system stating that multiple unauthorized excecutable files were detected on the employee's computer. <br/><br/>
 
-<b>Warning: This is for educational purposes only.</b> Using this information to wipe drives can permanently erase valuable data. Proceed with extreme caution and at your own risk.<br/><br/>
+Here is a timeline of the events leading up to this alert:
 
+1:11 p.m.: An employee receives an email containing a file attachment.
 
-<h2>Search for Command Prompt</h2>
-I began by typing "Command Prompt" in the Windows search bar.</br></br>
+1:13 p.m.: The employee successfully downloads and opens the file.
+
+1:15 p.m.: Multiple unauthorized executable files are created on the employee's computer.
+
+1:20 p.m.: An intrusion detection system detects the executable files and sends out an alert to the SOC.<br/><br/>
+
+<h2>Creating SHA256 Hash of File</h2>
+Transferred a copy of the file securely to an isolated Linux virtual machine. Ran the sha256sum command on the file. Noted the SHA256 file hash.<br/><br/>
+
+SHA256 file hash: 54e6ea47eb04634d3e87fd7787e2136ccfbcc80ade34f246a12cf93bab527f6b</br></br>
                                                 
 <p align="center">
-<img src="https://i.imgur.com/4tfaGs4.png" height="80%" width="80%" alt="Open the file that contains the allow list"/>
+<img src="https://i.imgur.com/o1Djike.png" height="80%" width="80%" alt="Open the file that contains the allow list"/>
 <br />
 <br />
 </p>
 
-<h2>Right-click and Run as Administrator</h2>
+<h2>Used VirusTotal Website to Investigate File Hash</h2>
 Then I right-clicked on the "Command Prompt" result and selected "Run as administrator."</br></br>
                                                 
 <p align="center">
-<img src="https://i.imgur.com/7bCi1DW.png" height="30%" width="30%" alt="Open the file that contains the allow list"/>
+<img src="https://i.imgur.com/Fc97h0B.png" height="80%" width="80%" alt="Open the file that contains the allow list"/>
 <br />
 <br />
 </p>
@@ -29,72 +38,10 @@ Then I right-clicked on the "Command Prompt" result and selected "Run as adminis
 The Command Prompt opened.</br></br>
                                                 
 <p align="center">
-<img src="https://i.imgur.com/gxojtvH.png" height="80%" width="80%" alt="Open the file that contains the allow list"/>
+<img src="https://i.imgur.com/E4OBbTc.png" height="80%" width="80%" alt="Open the file that contains the allow list"/>
 <br />
 <br />
 </p>
-
-<h2>Diskpart</h2>
-
-In the command prompt, I typed `diskpart` and pressed Enter.</br></br> 
-
-<p align="center">
-<img src="https://i.imgur.com/TGhFnGl.png" height="80%" width="80%" alt="Read the file contents"/>
-<br />
-<br />
-</p>
-
-<h2>List Disk</h2>
-
-After Dispart opened, I typed `list disk` and pressed Enter.<br/><br/>
-
-<p align="center">
-<img src="https://i.imgur.com/E8W9BR7.png" height="80%" width="80%" alt="Convert the string into a list"/>
-<br />
-<br />
-</p>
-
-<h2>List of Disks</h2>
-
-A list displayed of all connected disks.<br/><br/>
-
-<p align="center">
-<img src="https://i.imgur.com/mxKdhnd.png" height="80%" width="80%" alt="Iterate through the IP addresses list"/>
-<br />
-<br />
-</p>
-
-<h2>Disk Number</h2>
-
-I carefully reviewed the list and identified the disk that I needed to wipe. I typed `select disk 1` and pressed Enter.<br/><br/>
-
-<p align="center">
-<img src="https://i.imgur.com/TbdSwtf.png" height="80%" width="80%" alt="Remove IP addresses that are on the remove list"/>
-<br />
-<br />
-</p>
-
-<h2>Clean Command</h2>
-
-Then in the diskpart prompt I entered `clean` and pressed Enter. I made sure that I had the correct disk before proceeding knowing that this process will permanently erase all data on the selected disk. This was done by double-checking the disk number before proceeding, as wiping the wrong disk can have irreversible consequences.<br/><br/>
-
-<p align="center">
-<img src="https://i.imgur.com/caTn1Ec.png" height="80%" width="80%" alt="Update the file with the revised list of IP addresses"/>
-<br />
-<br />
-</p>
-
-<h2>Dispart Succeeded</h2>
-
-Once the process was finished, I saw a message indicating that Diskpart succeeded in cleaning the disk.</br></br>
-
-<p align="center">
-<img src="https://i.imgur.com/SpBLgP4.png" height="80%" width="80%" alt="Update the file with the revised list of IP addresses"/>
-<br />
-<br />
-</p>
-
-After I was finished, I typed `exit` to leave Diskpart and closed the Command Prompt window.</br></br>
 
 <h2>Summary</h2>
 
