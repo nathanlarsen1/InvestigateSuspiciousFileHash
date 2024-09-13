@@ -28,7 +28,7 @@ SHA256 file hash: 54e6ea47eb04634d3e87fd7787e2136ccfbcc80ade34f246a12cf93bab527f
 </p>
 
 <h2>Used VirusTotal Website to Investigate File Hash</h2>
-Pasted the hash value in the search box of the VirusTotal website."</br></br>
+Pasted the hash value in the search box of the VirusTotal website.</br></br>
                                                 
 <p align="center">
 <img src="https://i.imgur.com/Fc97h0B.png" height="80%" width="80%" alt="Used VirusTotal Website to Investigate File Hash"/>
