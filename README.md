@@ -2,9 +2,11 @@
 
 
 <h2>Project description</h2>
-For this project, I acted as a Cybersecurity Analyst on a security team for an organization. One of my job roles involved investigating suspicious files. There was a file discovered that was attached to an email that an employee received in their inbox. Shortly after the reception of the email, an alert was sent to the SOC(System Operations Center) by the IDS(Intrusion Detection System) stating that multiple unauthorized excecutable files were detected on the employee's computer. <br/><br/>
+For this project, I acted as a Cybersecurity Analyst on a security team for an organization. One of my job roles involved investigating suspicious files.<br/><br/>
 
-Here is a timeline of the events leading up to this alert:
+There was a file discovered that was attached to an email an employee received in their inbox. Shortly after the reception of the email, an alert was sent to the SOC (System Operations Center) by the IDS (Intrusion Detection System) stating that multiple unauthorized executable files were detected on the employee's computer.<br/><br/>
+
+The following is a timeline of the events leading up to this alert:
 
 1:11 p.m.: An employee receives an email containing a file attachment.
 
@@ -20,7 +22,7 @@ Transferred a copy of the file securely to an isolated Linux virtual machine. Ra
 SHA256 file hash: 54e6ea47eb04634d3e87fd7787e2136ccfbcc80ade34f246a12cf93bab527f6b</br></br>
                                                 
 <p align="center">
-<img src="https://i.imgur.com/o1Djike.png" height="80%" width="80%" alt="Open the file that contains the allow list"/>
+<img src="https://i.imgur.com/o1Djike.png" height="80%" width="80%" alt="Creating SHA256 Hash of File"/>
 <br />
 <br />
 </p>
@@ -29,7 +31,7 @@ SHA256 file hash: 54e6ea47eb04634d3e87fd7787e2136ccfbcc80ade34f246a12cf93bab527f
 Pasted the hash value in the search box of the VirusTotal website."</br></br>
                                                 
 <p align="center">
-<img src="https://i.imgur.com/Fc97h0B.png" height="80%" width="80%" alt="Open the file that contains the allow list"/>
+<img src="https://i.imgur.com/Fc97h0B.png" height="80%" width="80%" alt="Used VirusTotal Website to Investigate File Hash"/>
 <br />
 <br />
 </p>
@@ -38,7 +40,7 @@ Pasted the hash value in the search box of the VirusTotal website."</br></br>
 The following image is the results I retrieved from the VirusTotal website from the hash. By these results, it was found that 61/73 security vendors flagged this file as malicious. The popular threat label is "trojan.flagpro/fragtor" which means it is a trojan from the fragtor/flagpro family.</br></br>
                                                 
 <p align="center">
-<img src="https://i.imgur.com/E4OBbTc.png" height="80%" width="80%" alt="Open the file that contains the allow list"/>
+<img src="https://i.imgur.com/E4OBbTc.png" height="80%" width="80%" alt="VirusTotal Website Results"/>
 <br />
 <br />
 </p>
