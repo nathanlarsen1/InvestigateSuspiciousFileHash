@@ -28,7 +28,7 @@ The following is a timeline of the events leading up to this alert:
 
 <h2>Project Walkthrough</h2>
 
-<h3>1. Creating SHA256 Hash of File</h3>
+<h3>1. Creating SHA256 hash of file</h3>
 
 Transferred a copy of the file securely to an isolated Linux virtual machine. Ran the sha256sum command on the file. Noted the SHA256 file hash.<br/><br/>
 
@@ -40,7 +40,7 @@ SHA256 file hash: 54e6ea47eb04634d3e87fd7787e2136ccfbcc80ade34f246a12cf93bab527f
 <br />
 </p>
 
-<h3>2. Used VirusTotal Website to Investigate File Hash</h3>
+<h3>2. Used VirusTotal website to investigate file hash</h3>
 Pasted the hash value in the search box of the VirusTotal website.</br></br>
                                                 
 <p align="center">
@@ -49,7 +49,7 @@ Pasted the hash value in the search box of the VirusTotal website.</br></br>
 <br />
 </p>
 
-<h3>3. VirusTotal Website Results</h3>
+<h3>3. VirusTotal website results</h3>
 The following image is the results I retrieved from the VirusTotal website from the hash. By these results, it was found that 61/73 security vendors flagged this file as malicious. The popular threat label is "trojan.flagpro/fragtor" which means it is a trojan from the fragtor/flagpro family.</br></br>
                                                 
 <p align="center">
